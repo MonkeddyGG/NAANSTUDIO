@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaaN Studio | Arquitectura</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header & Navegación -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>NaaN <span>Studio</span></h1>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#cotizacion">Cotizar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h2>Arquitectura e Interiorismo</h2>
+            <p>Diseño, Ejecución de proyectos y Mobiliario.</p>
+            <a href="#cotizacion" class="btn btn-primary">Inicia tu Proyecto</a>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="about section-padding">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h3>Sobre NaaN Studio</h3>
+                <p>Somos un estudio de arquitectura con sede en Monterrey, Mx. Especializados en transformar ideas en
+                    espacios tangibles, funcionales y estéticamente extraordinarios.</p>
+                <p>Nuestro enfoque abarca desde la conceptualización arquitectónica hasta la ejecución minuciosa de obra
+                    y el diseño de mobiliario a medida, asegurando calidad en cada detalle.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                    alt="Oficina de arquitectura">
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services section-padding bg-beige">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h4>Diseño</h4>
+                    <p>Conceptualización arquitectónica, diseño de interiores y planeación espacial adaptada a tus
+                        necesidades.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hard-hat"></i>
+                    <h4>Ejecución de Proyectos</h4>
+                    <p>Gestión y supervisión de obra, mantenimiento y remodelaciones con los más altos estándares de
+                        calidad.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-couch"></i>
+                    <h4>Mobiliario</h4>
+                    <p>Diseño y fabricación de mobiliario a medida para complementar y dar personalidad a tus espacios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portafolio</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+                    alt="Proyecto Residencial">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
+                    alt="Diseño Interior">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
+                    alt="Mobiliario a medida">
+                <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=600&q=80"
+                    alt="Ejecución de obra">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
+                    alt="Remodelación">
+                <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=600&q=80"
+                    alt="Acabados arquitectónicos">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="quote section-padding bg-green">
+        <div class="container">
+            <div class="quote-content">
+                <h2>Solicita una Cotización</h2>
+                <p>Cuéntanos sobre tu próximo proyecto y te asesoraremos sin compromiso.</p>
+                <form class="quote-form">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <select required>
+                        <option value="" disabled selected>Tipo de servicio...</option>
+                        <option value="diseno">Diseño Arquitectónico</option>
+                        <option value="ejecucion">Ejecución de Obra</option>
+                        <option value="mobiliario">Diseño de Mobiliario</option>
+                    </select>
+                    <textarea rows="4" placeholder="Describe brevemente tu proyecto" required></textarea>
+                    <button type="submit" class="btn btn-terracotta">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>NaaN <span>Studio</span></h3>
+                <p>Arquitectura, diseño y ejecución de proyectos impecables.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Monterrey, Mx.</p>
+                <p><i class="fas fa-envelope"></i> hola@naanarquitectura.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/naan_arquitectura" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NaaN Studio | Arquitectura. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
